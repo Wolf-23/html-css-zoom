@@ -76,8 +76,10 @@ footer {
 }
 
 footer i {
-    font-size: 30px;
+    font-size: 20px;
 }
+
+/* Left */
 
 .left {
     display: flex;
@@ -85,26 +87,65 @@ footer i {
 
 .left span {
     display: block;
+    margin: 4px;
 }
 
-.mute, .video{
-    margin: 0 10px;
+.mute, .stop-video, .icon-angle{
     text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.mute, .stop-video {
+    cursor: pointer;
+}
+
+.mute {
+    margin-left: 10px;
 }
 
 .angle i {
     font-size: 15px;
 }
 
-.microphone, .angle {
-    display: inline;
+.angle {
+    line-height: 80px;
+    margin-left: 10px;
 }
 
+.microphone, .angle, .video, .green-icon {
+    display: inline-block;
+}
 
+/* Center */
 
+.center {
+    display: flex;
+    align-items: center;
+}
 
+.center span {
+    display: block;
+    margin: 4px;
+    cursor: pointer;
+}
 
+.icon {
+    text-align: center;
+    align-items: center;
+    padding: 0 8px;
+}
 
+.green-icon {
+    display: inline-block;
+}
+
+.green-icon i {
+    color: green;
+}
+
+/* End Meeting */
 
 .end-meeting {
     background-color: #555;
@@ -113,4 +154,22 @@ footer i {
     padding: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+
+/* Hover */
+
+.mute:hover, .stop-video:hover{
+    background-color: #555;
+}
+
+.end-meeting:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.speaker:hover, .zoom:hover{
+    background-color: #fff;
+    color: #555;
 }
