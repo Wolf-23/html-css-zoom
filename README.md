@@ -1,4 +1,4 @@
-# **Esercizio Boolean - Giornale The Booleaner**
+# **Esercizio Boolean - Zoom**
 
 * Nome: html-css-zoom
 * Autore: Lupinu Riccardo
